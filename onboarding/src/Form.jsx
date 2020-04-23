@@ -108,21 +108,21 @@ const validateChange = (event) => {
     <div>
       <StyledForm onSubmit={submitPostRequest}>
         <label htmlFor="nameBox"></label>
-            <Input startAdornment={
+            <Input color="secondary" startAdornment={
             <InputAdornment position="start">
               <AccountCircle />
             </InputAdornment>
           } type="text" name="name" id="nameBox" placeholder="Name" value={formState.name} onChange={inputChange} />
             {validationErrors.name.length > 0 ? <p> {validationErrors.name}</p> : null}
             <label htmlFor="emailBox"></label>
-            <Input startAdornment={
+            <Input color="secondary" startAdornment={
             <InputAdornment position="start">
               <EmailIcon />
             </InputAdornment>
           } type="email" name="email" id="emailBox" placeholder="email" value={formState.email} onChange={inputChange} />
             {validationErrors.email.length > 0 ? <p> {validationErrors.email}</p> : null}
            <label htmlFor="passwordBox"></label>
-           <Input startAdornment={
+           <Input  color="secondary" startAdornment={
             <InputAdornment position="start">
               <LockOpenIcon />
             </InputAdornment>
